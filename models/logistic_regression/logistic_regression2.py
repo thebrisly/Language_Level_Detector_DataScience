@@ -6,8 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-
-### Functions 
+### Functions
 
 def train_logistic_regression_model(X_train, y_train):
     """
@@ -53,7 +52,6 @@ def evaluate_logistic_regression_model(model, X_test, y_test):
     print("Confusion Matrix:")
     print(confusion_matrix(y_test, preds))
 
-
 def apply_logistic_regression_model(model, tfidf_vectorizer, unlabelled_data, label_encoder):
     """
     Applies the pretrained logistic regression model to unlabelled data and saves the results.
@@ -81,7 +79,6 @@ def apply_logistic_regression_model(model, tfidf_vectorizer, unlabelled_data, la
 
     return unlabelled_data[['id', 'difficulty']]
 
-
 ### Main code
 
 def main():
@@ -92,8 +89,8 @@ def main():
     label_encoder = LabelEncoder()
     y = label_encoder.fit_transform(training_data['difficulty'])
 
-    # Using TF-IDF for text vectorization
-    tfidf_vectorizer = TfidfVectorizer()
+    # Using TF-IDF for text vectorization with bigrams
+    tfidf_vectorizer = TfidfVectorizer(ngram_range=(1, 2))  # Use unigrams and bigrams
     X = tfidf_vectorizer.fit_transform(training_data['sentence'])
 
     # Split the data into training and testing sets
@@ -112,8 +109,7 @@ def main():
     result_data = apply_logistic_regression_model(logreg_model, tfidf_vectorizer, unlabelled_data, label_encoder)
 
     # Save the result in the desired output format
-    result_data.to_csv("logistic_regression1_results.csv", index=False)
-
+    result_data.to_csv("logistic_regression2_results.csv", index=False)
 
 if __name__ == "__main__":
     main()

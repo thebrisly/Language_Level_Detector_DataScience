@@ -1,35 +1,34 @@
-# logistic_regression_model.py
-from sklearn.linear_model import LogisticRegression
+# Import necessary libraries
+import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
-import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-
 
 ### Functions 
 
-def train_logistic_regression_model(X_train, y_train):
+def train_knn_model(X_train, y_train):
     """
-    Trains a logistic regression model on the given training data.
+    Trains a K-Nearest Neighbors (KNN) model on the given training data.
 
     Parameters:
     - X_train: Features for training
     - y_train: Target variable for training
 
     Returns:
-    - Trained logistic regression model
+    - Trained KNN model
     """
-    model = LogisticRegression()
+    model = KNeighborsClassifier()
     model.fit(X_train, y_train)
     return model
 
-def evaluate_logistic_regression_model(model, X_test, y_test):
+def evaluate_knn_model(model, X_test, y_test):
     """
-    Evaluates a logistic regression model on the given test data and prints performance metrics.
+    Evaluates a K-Nearest Neighbors (KNN) model on the given test data and prints performance metrics.
 
     Parameters:
-    - model: Trained logistic regression model
+    - model: Trained KNN model
     - X_test: Features for testing
     - y_test: Target variable for testing
     """
@@ -43,7 +42,7 @@ def evaluate_logistic_regression_model(model, X_test, y_test):
     accuracy = accuracy_score(y_test, preds)
 
     # Print performance metrics
-    print("Logistic Regression Metrics:")
+    print("K-Nearest Neighbors (KNN) Metrics:")
     print(f"Precision: {precision}")
     print(f"Recall: {recall}")
     print(f"F1-score: {f1}")
@@ -54,12 +53,12 @@ def evaluate_logistic_regression_model(model, X_test, y_test):
     print(confusion_matrix(y_test, preds))
 
 
-def apply_logistic_regression_model(model, tfidf_vectorizer, unlabelled_data, label_encoder):
+def apply_knn_model(model, tfidf_vectorizer, unlabelled_data, label_encoder):
     """
-    Applies the pretrained logistic regression model to unlabelled data and saves the results.
+    Applies the pretrained K-Nearest Neighbors (KNN) model to unlabelled data and saves the results.
 
     Parameters:
-    - model: Trained logistic regression model
+    - model: Trained KNN model
     - tfidf_vectorizer: TF-IDF vectorizer used for training
     - unlabelled_data: Unlabelled test data
     - label_encoder: LabelEncoder used for encoding 'difficulty'
@@ -99,20 +98,20 @@ def main():
     # Split the data into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    # Train logistic regression model
-    logreg_model = train_logistic_regression_model(X_train, y_train)
+    # Train KNN model
+    knn_model = train_knn_model(X_train, y_train)
 
-    # Evaluate logistic regression model
-    evaluate_logistic_regression_model(logreg_model, X_test, y_test)
+    # Evaluate KNN model
+    evaluate_knn_model(knn_model, X_test, y_test)
 
     # Reading the unlabelled test data
     unlabelled_data = pd.read_csv("https://raw.githubusercontent.com/thebrisly/UNIL_Geneva_DSML/main/data/unlabelled_test_data.csv")
 
-    # Apply the logistic regression model to unlabelled data
-    result_data = apply_logistic_regression_model(logreg_model, tfidf_vectorizer, unlabelled_data, label_encoder)
+    # Apply the KNN model to unlabelled data
+    result_data = apply_knn_model(knn_model, tfidf_vectorizer, unlabelled_data, label_encoder)
 
     # Save the result in the desired output format
-    result_data.to_csv("logistic_regression1_results.csv", index=False)
+    result_data.to_csv("knn1_results.csv", index=False)
 
 
 if __name__ == "__main__":
