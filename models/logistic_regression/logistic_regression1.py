@@ -37,9 +37,9 @@ def evaluate_logistic_regression_model(model, X_test, y_test):
     preds = model.predict(X_test)
 
     # Evaluate performance metrics
-    precision = precision_score(y_test, preds, average='weighted')
-    recall = recall_score(y_test, preds, average='weighted')
-    f1 = f1_score(y_test, preds, average='weighted')
+    precision = precision_score(y_test, preds, average='macro')
+    recall = recall_score(y_test, preds, average='macro')
+    f1 = f1_score(y_test, preds, average='macro')
     accuracy = accuracy_score(y_test, preds)
 
     # Print performance metrics
@@ -112,7 +112,7 @@ def main():
     result_data = apply_logistic_regression_model(logreg_model, tfidf_vectorizer, unlabelled_data, label_encoder)
 
     # Save the result in the desired output format
-    result_data.to_csv("../submissions/logistic_regression1.csv", index=False)
+    result_data.to_csv("logistic_regression1.csv", index=False)
 
 
 if __name__ == "__main__":
