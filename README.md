@@ -1,6 +1,6 @@
 # UNIL_Geneva_DSML
 
-images/Black and White Monthly News Email Header.png
+![Geneva header](images/Black and White Monthly News Email Header.png)
 
 
 ## 1. Introduction
