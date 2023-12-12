@@ -14,26 +14,26 @@ The main objective of this project is to explore and implement different machine
 ## 3. Methodology
 To achieve our goal, we split things up into 5 different stages :
 
-- Data Collection: Downloading and understanding a dataset of French texts annotated with their corresponding language proficiency levels (& lean the data if necessary).
-- Model Selection: Experimenting with various machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
-- Training and Evaluation: Training the selected models on the prepared dataset and evaluating their performance using appropriate metrics.
-- Optimization: Fine-tuning the models to improve their accuracy and generalization capabilities (& trying to increase the official dataset).
-- User-Friendly Interface : Creating a small website that uses our model and can predict the level of any sentence given to it (with a % of failure - of course).
-
-To deepen our systematic thinking, we'll now examine each element in detail.
-
 ### 3.1 Data Collection & Preprocessing
+Downloading and understanding a dataset of French texts annotated with their corresponding language proficiency levels (& lean the data if necessary).
 
 ### 3.2 Model selection & Architecture
+Experimenting with various machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
 
 ### 3.3 Training & Evaluation Strategies
+Training the selected models on the prepared dataset and evaluating their performance using appropriate metrics.
 
 ### 3.4 Model Optimization
+Fine-tuning the models to improve their accuracy and generalization capabilities (& trying to increase the official dataset).
 
 ### 3.5 Development of a User-Friendly Interface
+Creating a small website that uses our model and can predict the level of any sentence given to it (with a % of failure - of course).
+
 
 
 ## 4. Conclusion
+
+
 
 
 ## 5. Team
