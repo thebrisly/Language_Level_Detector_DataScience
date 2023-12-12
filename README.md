@@ -1,6 +1,6 @@
 # UNIL_Geneva_DSML
 
-![Black and White Monthly News Email Header](https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/3950e575-7b36-4407-91dd-82af5abb4f35)
+images/Black and White Monthly News Email Header.png
 
 
 ## 1. Introduction
