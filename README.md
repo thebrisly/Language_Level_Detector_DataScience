@@ -23,8 +23,24 @@ Experimenting with various machine learning models, such as natural language pro
 ### 3.3 Training & Evaluation Strategies
 Training the selected models on the prepared dataset and evaluating their performance using appropriate metrics.
 
+| Models    | Linear Regression | Decision Tree | KNN Neighbours | Random Forest |
+|:---------:|:---------:|:---------:|:---------:|:---------:|
+| Precision | 0.4753  |  0.3097 | 0.3972 | 0.4194
+| Recall    | 0.4745  |  0.3131  | 0.3160 | 0.4177
+| F1-score | 0.4694 | 0.3102 | 0.2948 | 0.4045 
+| Accuracy | 0.4760 | 0.3146 | 0.3198 | 0.4188
+
+In our case, the Linear Regression model is by far the most performant of the basic models. It has the highest metrics where the true positives are maximized, as well as the false negatives and false positives that are minimized. Considering the simple and linear relation between the wording and the language level,  the use of more complex models, such as decision trees and random forest are less reasonable, and in our case less efficient. 
+
 ### 3.4 Model Optimization
 Fine-tuning the models to improve their accuracy and generalization capabilities (& trying to increase the official dataset).
+
+| Models    | CamemBERT
+|:---------:|:---------:|
+| Precision | [enter value] 
+| Recall    | [enter value] 
+| F1-score | [enter value]
+| Accuracy | [enter value] 
 
 ### 3.5 Development of a User-Friendly Interface
 Creating a small website that uses our model and can predict the level of any sentence given to it (with a % of failure - of course).
