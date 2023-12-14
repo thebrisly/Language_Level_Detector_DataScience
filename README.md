@@ -22,7 +22,7 @@ After careful consideration, we made a strategic decision not to preprocess the 
 ### 3.2 Model selection & Architecture
 Experimenting with various machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
 
-#### 3.2.1 Training & Evaluation Strategies
+#### 3.2.1 Initial models
 We commenced our experimentation with fundamental machine learning models commonly encountered in class, including Linear Regression, Decision Tree, KNN Neighbours, and Random Forest. The table below outlines the performance metrics achieved by each model through training and evaluation on our prepared dataset:
 
 | Models    | Linear Regression | Decision Tree | KNN Neighbours | Random Forest |
@@ -37,7 +37,6 @@ In our case, the Linear Regression model is by far the most performant of the ba
 #### 3.2.2 Advanced model
 After trying out basic models, we realized we needed something more advanced for better results. So, we did some research and found BERT models, which are really good at understanding language. This step was important for making our language proficiency assessment work even better.
 
-
 ### 3.3 Optimization with CamemBERT
 After implementing CamemBERT, an advanced language model, we aimed to optimize our language proficiency assessment. Here are the performance metrics for CamemBERT:
 
@@ -47,7 +46,6 @@ After implementing CamemBERT, an advanced language model, we aimed to optimize o
 | Recall    | [enter value] 
 | F1-score | [enter value]
 | Accuracy | [enter value] 
-
 
 
 ### 3.4 Development of a User-Friendly Interface
