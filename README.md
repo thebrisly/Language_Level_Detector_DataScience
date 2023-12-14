@@ -12,16 +12,18 @@ Our primary goal is to develop and test various machine learning models on Frenc
 The main objective of this project is to explore and implement different machine learning algorithms to effectively categorize the difficulty levels of French texts. By leveraging a diverse range of models, we seek to enhance our understanding of how well these algorithms can perform in the context of language proficiency assessment. Once we implemented a great algorithm, we need to create a real-world application with a user-friendly interface. 
 
 ## 3. Methodology
-To achieve our goal, we split things up into 5 different stages :
+To achieve our goal, we split things up into 4 different stages :
 
 ### 3.1 Data Collection & Preprocessing
-Downloading and understanding a dataset of French texts annotated with their corresponding language proficiency levels (& lean the data if necessary).
+Our initial step involved a comprehensive analysis of the dataset, examining variables, and gaining a global understanding of its structure. 
+
+After careful consideration, we made a strategic decision not to preprocess the data. The rationale behind this choice was to work with the dataset in its entirety, preserving its original form and ensuring that our models are exposed to the unaltered linguistic nuances present in the French texts. This approach aims to maintain the integrity of the data and assess the models on their ability to handle real-world, unprocessed language data effectively.
 
 ### 3.2 Model selection & Architecture
 Experimenting with various machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
 
-### 3.3 Training & Evaluation Strategies
-Training the selected models on the prepared dataset and evaluating their performance using appropriate metrics.
+#### 3.2.1 Training & Evaluation Strategies
+We commenced our experimentation with fundamental machine learning models commonly encountered in class, including Linear Regression, Decision Tree, KNN Neighbours, and Random Forest. The table below outlines the performance metrics achieved by each model through training and evaluation on our prepared dataset:
 
 | Models    | Linear Regression | Decision Tree | KNN Neighbours | Random Forest |
 |:---------:|:---------:|:---------:|:---------:|:---------:|
@@ -32,8 +34,12 @@ Training the selected models on the prepared dataset and evaluating their perfor
 
 In our case, the Linear Regression model is by far the most performant of the basic models. It has the highest metrics where the true positives are maximized, as well as the false negatives and false positives that are minimized. Considering the simple and linear relation between the wording and the language level,  the use of more complex models, such as decision trees and random forest are less reasonable, and in our case less efficient. 
 
-### 3.4 Model Optimization
-Fine-tuning the models to improve their accuracy and generalization capabilities (& trying to increase the official dataset).
+#### 3.2.2 Advanced model
+After trying out basic models, we realized we needed something more advanced for better results. So, we did some research and found BERT models, which are really good at understanding language. This step was important for making our language proficiency assessment work even better.
+
+
+### 3.3 Optimization with CamemBERT
+After implementing CamemBERT, an advanced language model, we aimed to optimize our language proficiency assessment. Here are the performance metrics for CamemBERT:
 
 | Models    | CamemBERT
 |:---------:|:---------:|
@@ -42,15 +48,15 @@ Fine-tuning the models to improve their accuracy and generalization capabilities
 | F1-score | [enter value]
 | Accuracy | [enter value] 
 
-### 3.5 Development of a User-Friendly Interface
+
+
+### 3.4 Development of a User-Friendly Interface
 Creating a small website that uses our model and can predict the level of any sentence given to it (with a % of failure - of course).
 
+## 4. Improvements
+
+## 5. Conclusion
 
 
-## 4. Conclusion
-
-
-
-
-## 5. Team
+## 6. Team
 This project has been created by Lisa Hornung & Laura Fabbiano at the University of Lausanne (Unil) during the course "Data Science & Machine Learning" for the Master in Information System.
