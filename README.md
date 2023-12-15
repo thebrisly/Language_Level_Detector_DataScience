@@ -34,6 +34,11 @@ We commenced our experimentation with fundamental machine learning models common
 
 In our case, the Linear Regression model is by far the most performant of the basic models. It has the highest metrics where the true positives are maximized, as well as the false negatives and false positives that are minimized. Considering the simple and linear relation between the wording and the language level,  the use of more complex models, such as decision trees and random forest are less reasonable, and in our case less efficient. 
 
+
+| ![Image 1](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Accuracies.jpg) | ![Image 2](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20F1-Scores.jpg) | ![Image 3](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Precisions.jpg )| ![Image 4](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Recalls.jpg) |
+| --- | --- | --- | --- |
+
+
 #### 3.2.2 Advanced model
 After trying out basic models, we realized we needed something more advanced for better results. So, we did some research and found BERT models, which are really good at understanding language. This step was important for making our language proficiency assessment work even better.
 
