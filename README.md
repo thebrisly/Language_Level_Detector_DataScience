@@ -36,6 +36,7 @@ In our case, the Linear Regression model is by far the most performant of the ba
 
 
 | ![Image 1](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Accuracies.jpg) | ![Image 2](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20F1-Scores.jpg) | ![Image 3](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Precisions.jpg )| ![Image 4](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Recalls.jpg) |
+| --- | --- | --- | --- |
 
 Linear regression works well for our project because it looks for simple linear relationships between words in our French sentences and language proficiency levels. This means that it is effective for understanding how language difficulty evolves in a direct way with linguistic features.
 
