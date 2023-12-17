@@ -42,8 +42,6 @@ Linear regression works well for our project because it looks for simple linear 
 
 On the other hand, decision trees (the "worst" tested model) attempt to understand relationships in a more complex way, by creating more detailed rules for making decisions. In our case, where the relationship between language and difficulty can best be described by straight lines (as linear regression does), decision trees can sometimes be too complicated to capture these simple relationships. This can lead to poorer performance, as the model may overlearn less important details instead of focusing on general trends.
 
-| --- | --- | --- | --- |
-
 
 #### 3.2.2 Advanced model
 After trying out basic models, we realized we needed something more advanced for better results. So, we did some research and found BERT models, which are really good at understanding language. This step was important for making our language proficiency assessment work even better.
