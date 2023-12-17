@@ -36,6 +36,11 @@ In our case, the Linear Regression model is by far the most performant of the ba
 
 
 | ![Image 1](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Accuracies.jpg) | ![Image 2](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20F1-Scores.jpg) | ![Image 3](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Precisions.jpg )| ![Image 4](https://github.com/thebrisly/UNIL_Geneva_DSML/blob/main/images/BarPlot%20Recalls.jpg) |
+
+Linear regression works well for our project because it looks for simple linear relationships between words in our French sentences and language proficiency levels. This means that it is effective for understanding how language difficulty evolves in a direct way with linguistic features.
+
+On the other hand, decision trees (the "worst" tested model) attempt to understand relationships in a more complex way, by creating more detailed rules for making decisions. In our case, where the relationship between language and difficulty can best be described by straight lines (as linear regression does), decision trees can sometimes be too complicated to capture these simple relationships. This can lead to poorer performance, as the model may overlearn less important details instead of focusing on general trends.
+
 | --- | --- | --- | --- |
 
 
