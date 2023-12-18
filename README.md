@@ -44,17 +44,36 @@ On the other hand, decision trees (the "worst" tested model) attempt to understa
 
 
 #### 3.2.2 Advanced model
-After trying out basic models, we realized we needed something more advanced for better results. So, we did some research and found BERT models, which are really good at understanding language. This step was important for making our language proficiency assessment work even better.
+After trying out basic models, we realized we needed something more advanced for better results. So, we did some research and found BERT models, which are really good at understanding language. We found "CamemBERT" which is the french version of the BERT model. 
+
+This step was important for making our language proficiency assessment work even better and have a better score in the kaggle competition.
 
 ### 3.3 Optimization with CamemBERT
-After implementing CamemBERT, an advanced language model, we aimed to optimize our language proficiency assessment. Here are the performance metrics for CamemBERT:
+
+CamemBERT is a smart computer program designed to understand and work with the French language. It helps computers make sense of French text by learning patterns and relationships in the language.
+
+#### 3.3.1 Tokenization and padding
+
+To prepare the data for CamemBERT, we employed tokenization and padding techniques. Using the CamemBERT tokenizer, we converted sentences into numerical tokens, ensuring consistency in the input format. Additionally, we applied padding to standardize the length of sequences, facilitating efficient model training.
+
+
+#### 3.3.2 Model configuration
+
+The CamemBERT model was configured for sequence classification, aligning with the nature of our language proficiency assessment task. The number of labels was set to six, corresponding to the six language proficiency levels (A1, A2, B1, B2, C1, C2).
+
+#### 3.3.3 Training and evaluation
+
+The training process involved multiple epochs, allowing the model to adapt and learn the intricate patterns in the language data. We utilized the AdamW optimizer with a learning rate of 2e-5 for effective training. The performance of the optimized CamemBERT model was evaluated on a separate validation set, ensuring robustness and generalization.
+
+#### 3.3.4 Results and insights
+
+The optimized CamemBERT model demonstrated improved language proficiency classification compared to the initial basic models. We couldn't print different metric on the python script so we just took the accuracy from the kaggle board. For a more complete picture, we should also check precision, recall, and F1 score. We got this accuracy :
 
 | Models    | CamemBERT
 |:---------:|:---------:|
-| Precision | [enter value] 
-| Recall    | [enter value] 
-| F1-score | [enter value]
-| Accuracy | [enter value] 
+| Accuracy | 0.609 | 
+
+Even though we couldn't get all the metrics, the relatively high accuracy suggests our advanced language model did well in assessing language proficiency. 
 
 
 ### 3.4 Development of a User-Friendly Interface
@@ -62,7 +81,21 @@ Creating a small website that uses our model and can predict the level of any se
 
 ## 4. Improvements
 
+If we had more time, what would we do?
+
+To make our model even better, we could have tried a few things : 
+
+First, we could have added more variety to our data through data augmentation. This means creating different versions of our sentences to help the model learn from a wider range of language styles. We tried to do it, but without any success - so we decided to delete it. 
+
+Another trick, that has been recommendend on the Kaggle competition page, is using advanced techniques like text embedding. This involves representing words in a way that helps the model understand their meanings better. These improvements could have bumped up our accuracy. We also tried a bit, but without any success (we didn't know hoe to implement it well).
+
+Also, working with a larger and more diverse set of data could have helped our model become more adaptable to different kinds of language challenges. Trying out different settings for our model, testing out new ideas, and using more specific language resources could have been useful too. There are lots of things we could explore to make our model even more accurate and powerful.
+
 ## 5. Conclusion
+
+Ton conclude, we explored different machine learning models for evaluating the difficulty levels of French texts, progressing from basic models like linear regression to advanced models like CamemBERT. Despite the difficulties encountered in obtaining all measurements, the optimized CamemBERT model showed a little improvement in accuracy (going from 0.470 with linear regression to 0.609), suggesting its effectiveness in evaluating language skills. 
+
+Although our current accuracy is decent, we could still improve it by increasing the data, using advanced techniques such as text integration, and working with a larger and more diverse dataset.
 
 
 ## 6. Team
