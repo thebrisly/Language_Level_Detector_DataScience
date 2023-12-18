@@ -89,13 +89,13 @@ To make our model even better, we could have tried a few things :
 
 First, we could have added more variety to our data through data augmentation. This means creating different versions of our sentences to help the model learn from a wider range of language styles. We tried to do it, but without any success - so we decided to delete it. 
 
-Another trick, that has been recommendend on the Kaggle competition page, is using advanced techniques like text embedding. This involves representing words in a way that helps the model understand their meanings better. These improvements could have bumped up our accuracy. We also tried a bit, but without any success (we didn't know hoe to implement it well).
+Another trick, that has been recommendend on the Kaggle competition page, is using advanced techniques like text embedding. This involves representing words in a way that helps the model understand their meanings better. These improvements could have bumped up our accuracy. We also tried a bit, but without any success (we didn't know how to implement it well).
 
 Also, working with a larger and more diverse set of data could have helped our model become more adaptable to different kinds of language challenges. Trying out different settings for our model, testing out new ideas, and using more specific language resources could have been useful too. There are lots of things we could explore to make our model even more accurate and powerful.
 
 ## 5. Conclusion
 
-Ton conclude, we explored different machine learning models for evaluating the difficulty levels of French texts, progressing from basic models like linear regression to advanced models like CamemBERT. Despite the difficulties encountered in obtaining all measurements, the optimized CamemBERT model showed a little improvement in accuracy (going from 0.470 with linear regression to 0.609), suggesting its effectiveness in evaluating language skills. 
+To conclude, we explored different machine learning models for evaluating the difficulty levels of French texts, progressing from basic models like linear regression to advanced models like CamemBERT. Despite the difficulties encountered in obtaining all measurements, the optimized CamemBERT model showed a little improvement in accuracy (going from 0.470 with linear regression to 0.609), suggesting its effectiveness in evaluating language skills. 
 
 Although our current accuracy is decent, we could still improve it by increasing the data, using advanced techniques such as text integration, and working with a larger and more diverse dataset.
 
