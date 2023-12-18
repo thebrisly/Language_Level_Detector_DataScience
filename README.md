@@ -81,7 +81,7 @@ Creating a small website that uses our model and can predict the level of any se
 
 ## 4. Improvements
 
-If we had more time, what would we do?
+*--> If we had more time, what would we do?*
 
 To make our model even better, we could have tried a few things : 
 
