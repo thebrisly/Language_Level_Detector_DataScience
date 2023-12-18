@@ -75,6 +75,8 @@ The optimized CamemBERT model demonstrated improved language proficiency classif
 
 Even though we couldn't get all the metrics, the relatively high accuracy suggests our advanced language model did well in assessing language proficiency. 
 
+This result can be explained with the fact that CamemBERT is better at understanding the French language than traditional models because it's designed specifically for that purpose. It learns the details and connections in the language really well.
+
 
 ### 3.4 Development of a User-Friendly Interface
 Creating a small website that uses our model and can predict the level of any sentence given to it (with a % of failure - of course).
