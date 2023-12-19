@@ -77,7 +77,7 @@ With the camemBERT model we got this accuracy :
 
 To achieve this, here's what we did it:
 
-##### Best training settings 
+##### * Best training settings *
 The final model that we used is composed of :
 - Epochs: We conducted training over 8 iterations to impart extensive knowledge to the model.
 - Learning Rate: Used a learning rate of 2e-5 to help the model learn just right.
@@ -85,12 +85,14 @@ The final model that we used is composed of :
 
 These settings were selected through experimentation, providing the best balance for effective language proficiency assessment with our CamemBERT model.
   
-##### Exploration of alternative approaches
+##### * Exploration of alternative approaches *
 Before finding these parameters, we explored various alternative approaches in our quest for an optimized model:
 
-- Dynamic Learning Rate Adjustment: We experimented with a strategy to dynamically adjust the learning rate, aiming to adapt to the evolving knowledge of the model. The idea was to fine-tune the learning process as the model gained experience. However, to our surprise, this approach did not lead to improved results. After careful evaluation, we decided to exclude this strategy from our methodology, as it did not contribute positively to the language proficiency assessment task.
+- Dynamic learning rate adjustment
+We experimented with a strategy to dynamically adjust the learning rate, aiming to adapt to the evolving knowledge of the model. The idea was to fine-tune the learning process as the model gained experience. However, to our surprise, this approach did not lead to improved results. After careful evaluation, we decided to exclude this strategy from our methodology, as it did not contribute positively to the language proficiency assessment task.
 
-- Iterative Experimentation: Our journey involved extensive experimentation, exploring different combinations of parameters, training iterations, and learning rate strategies. This iterative process was crucial in refining our model and identifying the most effective configuration for accurate language proficiency prediction.
+- Iterative experimentation
+Our journey involved extensive experimentation, exploring different combinations of parameters, training iterations, and learning rate strategies. This iterative process was crucial in refining our model and identifying the most effective configuration for accurate language proficiency prediction.
 
 Despite the diverse approaches explored, the finalized parameters mentioned earlier emerged as the most successful, providing a robust and reliable solution for our language assessment task. And even though we couldn't get all the metrics, the relatively high accuracy suggests our advanced language model did well in assessing language proficiency. 
 
