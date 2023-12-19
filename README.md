@@ -67,13 +67,32 @@ The training process involved multiple epochs, allowing the model to adapt and l
 
 #### 3.3.4 Results and insights
 
-The optimized CamemBERT model demonstrated improved language proficiency classification compared to the initial basic models. We couldn't print different metric on the python script so we just took the accuracy from the kaggle board. For a more complete picture, we should also check precision, recall, and F1 score. We got this accuracy :
+The optimized CamemBERT model demonstrated improved language proficiency classification compared to the initial basic models. We couldn't print different metric on the python script so we just took the accuracy from the kaggle board. For a more complete picture, we should also check precision, recall, and F1 score. 
+
+With the camemBERT model we got this accuracy :
 
 | Models    | CamemBERT
 |:---------:|:---------:|
 | Accuracy | 0.609 | 
 
-Even though we couldn't get all the metrics, the relatively high accuracy suggests our advanced language model did well in assessing language proficiency. 
+To achieve this, here's what we did it:
+
+##### Best training settings 
+The final model that we used is composed of :
+- Epochs: We conducted training over 8 iterations to impart extensive knowledge to the model.
+- Learning Rate: Used a learning rate of 2e-5 to help the model learn just right.
+- Optimizer: Picked AdamW to make our model even smarter.
+
+These settings were selected through experimentation, providing the best balance for effective language proficiency assessment with our CamemBERT model.
+  
+##### Exploration of alternative approaches
+Before finding these parameters, we explored various alternative approaches in our quest for an optimized model:
+
+- Dynamic Learning Rate Adjustment: We experimented with a strategy to dynamically adjust the learning rate, aiming to adapt to the evolving knowledge of the model. The idea was to fine-tune the learning process as the model gained experience. However, to our surprise, this approach did not lead to improved results. After careful evaluation, we decided to exclude this strategy from our methodology, as it did not contribute positively to the language proficiency assessment task.
+
+- Iterative Experimentation: Our journey involved extensive experimentation, exploring different combinations of parameters, training iterations, and learning rate strategies. This iterative process was crucial in refining our model and identifying the most effective configuration for accurate language proficiency prediction.
+
+Despite the diverse approaches explored, the finalized parameters mentioned earlier emerged as the most successful, providing a robust and reliable solution for our language assessment task. And even though we couldn't get all the metrics, the relatively high accuracy suggests our advanced language model did well in assessing language proficiency. 
 
 This result can be explained with the fact that CamemBERT is better at understanding the French language than traditional models because it's designed specifically for that purpose. It learns the details and connections in the language really well.
 
