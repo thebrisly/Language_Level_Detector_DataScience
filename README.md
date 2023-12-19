@@ -78,10 +78,10 @@ Even though we couldn't get all the metrics, the relatively high accuracy sugges
 This result can be explained with the fact that CamemBERT is better at understanding the French language than traditional models because it's designed specifically for that purpose. It learns the details and connections in the language really well.
 
 
-### 3.4 Development of a User-Friendly Interface
+## 4 Development of a User-Friendly Interface
 Creating a small website that uses our model and can predict the level of any sentence given to it (with a % of failure - of course).
 
-## 4. Improvements
+## 5. Improvements
 
 *--> If we had more time, what would we do?*
 
@@ -93,12 +93,12 @@ Another trick, that has been recommendend on the Kaggle competition page, is usi
 
 Also, working with a larger and more diverse set of data could have helped our model become more adaptable to different kinds of language challenges. Trying out different settings for our model, testing out new ideas, and using more specific language resources could have been useful too. There are lots of things we could explore to make our model even more accurate and powerful.
 
-## 5. Conclusion
+## 6. Conclusion
 
 To conclude, we explored different machine learning models for evaluating the difficulty levels of French texts, progressing from basic models like linear regression to advanced models like CamemBERT. Despite the difficulties encountered in obtaining all measurements, the optimized CamemBERT model showed a little improvement in accuracy (going from 0.470 with linear regression to 0.609), suggesting its effectiveness in evaluating language skills. 
 
 Although our current accuracy is decent, we could still improve it by increasing the data, using advanced techniques such as text integration, and working with a larger and more diverse dataset.
 
 
-## 6. Team
+## 7. Team
 This project has been created by Lisa Hornung & Laura Fabbiano at the University of Lausanne (Unil) during the course "Data Science & Machine Learning" for the Master in Information System.
