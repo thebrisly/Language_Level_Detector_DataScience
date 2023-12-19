@@ -77,7 +77,7 @@ With the camemBERT model we got this accuracy :
 
 To achieve this, here's what we did it:
 
-##### * Best training settings *
+##### ---------- Best training settings ---------- 
 The final model that we used is composed of :
 - Epochs: We conducted training over 8 iterations to impart extensive knowledge to the model.
 - Learning Rate: Used a learning rate of 2e-5 to help the model learn just right.
@@ -85,7 +85,7 @@ The final model that we used is composed of :
 
 These settings were selected through experimentation, providing the best balance for effective language proficiency assessment with our CamemBERT model.
   
-##### * Exploration of alternative approaches *
+##### ---------- Exploration of alternative approaches ---------- 
 Before finding these parameters, we explored various alternative approaches in our quest for an optimized model:
 
 - Dynamic learning rate adjustment
@@ -100,7 +100,10 @@ This result can be explained with the fact that CamemBERT is better at understan
 
 
 ## 4 Development of a User-Friendly Interface
-Creating a small website that uses our model and can predict the level of any sentence given to it (with a % of failure - of course).
+In our project, we aimed to create a user-friendly interface to make our language proficiency model accessible to everyone. Initially, we tried using Streamlit, a tool for building interactive web applications with Python. However, we encountered a challenge – our final model turned out to be quite large, making it difficult to run the website smoothly.
+
+Despite this setback, we didn't give up. To showcase the functionality of our interface, we decided to run the website with a simpler linear regression model. While it won't provide the same level of accuracy as our advanced model, it gives you a glimpse of how the interface works. Check out the code in the corresponding file to see our efforts in action!
+
 
 ## 5. Improvements
 
@@ -113,6 +116,7 @@ First, we could have added more variety to our data through data augmentation. T
 Another trick, that has been recommendend on the Kaggle competition page, is using advanced techniques like text embedding. This involves representing words in a way that helps the model understand their meanings better. These improvements could have bumped up our accuracy. We also tried a bit, but without any success (we didn't know how to implement it well).
 
 Also, working with a larger and more diverse set of data could have helped our model become more adaptable to different kinds of language challenges. Trying out different settings for our model, testing out new ideas, and using more specific language resources could have been useful too. There are lots of things we could explore to make our model even more accurate and powerful.
+
 
 ## 6. Conclusion
 
