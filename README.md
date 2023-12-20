@@ -1,6 +1,6 @@
 # UNIL_Geneva_DSML
 
-<font color="#737070"><small> Run this project at home
+<sub><small> 0. Run this project at home
 
 You can run the different models we've created at home. To do so, run the following commands : 
 
@@ -14,7 +14,7 @@ Then, run the python programm that you selected, like this :
 
 ``` python3 logistic_regression1.py ``` Make sure to have all the libraries (sklearn, pandas, pytorch, streamlit...)  installed before running something :-) 
 
-Enjoy ! </small></font>
+Enjoy ! </small></sub>
 
 -----------------------------------------------------
 
