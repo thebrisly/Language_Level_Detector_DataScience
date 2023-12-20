@@ -20,7 +20,7 @@
 
 ![Black and White Monthly News Email Header](https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/fe6feaca-7e43-4f0d-9ffa-d2ec38c5416b)
 
-[ LINK TO THE YOUTUBE VIDEO HERE ](mettre_le_lien_ici)
+[ LINK TO THE YOUTUBE VIDEO HERE ](https://www.youtube.com/watch?v=XFMq_toFuL4)
 
 ## 1. Introduction
 Welcome to the UNIL_Geneva_DSML (Data Science and Machine Learning) project! 
