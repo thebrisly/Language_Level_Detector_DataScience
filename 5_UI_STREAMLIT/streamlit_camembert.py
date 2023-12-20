@@ -20,7 +20,7 @@ config_url = 'https://www.swisstransfer.com/d/6cc9ba75-fcd6-4718-a4af-9f81216ae7
 model_url = 'https://www.swisstransfer.com/d/4dd3b1f2-34fa-497e-a792-1903760e8ff4'
 
 def load_model():
-    model_path = r'/Users/lisahornung/Downloads/camembert_model '
+    model_path = r'./geneva_model'
     model = CamembertForSequenceClassification.from_pretrained(model_path)
     model.eval()
     return model
