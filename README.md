@@ -1,6 +1,6 @@
 # UNIL_Geneva_DSML
 
-<font color="#333333"><small> Run this project at home
+<font color="#737070"><small> Run this project at home
 
 You can run the different models we've created at home. To do so, run the following commands : 
 
