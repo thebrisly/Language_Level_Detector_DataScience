@@ -43,7 +43,7 @@ This approach aims to maintain the *integrity* of the data and assess the models
 In this section, we explored different types of machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
 
 #### 3.2.1 Initial models
-We commenced our experimentation with fundamental machine learning models commonly encountered in class, including [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/1_logistic_regression](Linear Regression), [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/2_decision_tree](Decision Tree), [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/3_knn](KNN Neighbours), and [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/4_random_forest](Random Forest). 
+We commenced our experimentation with fundamental machine learning models commonly encountered in class, including [Linear Regression](https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/1_logistic_regression), [Decision Tree](https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/2_decision_tree), [KNN Neighbours](https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/3_knn), and [Random Forest](https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/4_random_forest).
 
 
 Each model was constructed consistently, employing a 20/80 test-train split and utilizing functions from the sklearn library for implementation. This approach ensured uniformity and comparability across our experiments.
