@@ -22,12 +22,12 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler, Sequentia
 from tqdm import tqdm
 
 # Load training data
-training_data = 'https://raw.githubusercontent.com/thebrisly/UNIL_Geneva_DSML/main/data/training_data.csv'
+training_data = 'https://raw.githubusercontent.com/thebrisly/UNIL_Geneva_DSML/main/1_DATA/training_data.csv'
 train_df = pd.read_csv(training_data, encoding='utf-8')
 train_df['difficulty'] = train_df['difficulty'].replace(['A1', 'A2', 'B1', 'B2', 'C1', 'C2'], [0, 1, 2, 3, 4, 5])
 
 # Load test data
-test_data = 'https://raw.githubusercontent.com/thebrisly/UNIL_Geneva_DSML/main/data/unlabelled_test_data.csv'
+test_data = 'https://raw.githubusercontent.com/thebrisly/UNIL_Geneva_DSML/main/1_DATA/unlabelled_test_data.csv'
 test_df = pd.read_csv(test_data)
 
 # Tokenization and padding
