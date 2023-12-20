@@ -38,7 +38,7 @@ Our initial step involved a comprehensive analysis of the dataset, examining var
 
 After careful consideration, we made a strategic decision not to preprocess the data. The reason behind this choice was to work with the dataset in its entirety, preserving its original form and ensuring that our models are exposed to the unaltered linguistic nuances present in the French texts. 
 
-This approach aims to maintain the *integrity* of the data and assess the models on their ability to handle real-world, unprocessed language data effectively.
+This approach aims to maintain the **integrity** of the data and assess the models on their ability to handle real-world, unprocessed language data effectively.
 
 ### 3.2 Model selection & Architecture
 In this section, we explored different types of machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
@@ -127,16 +127,18 @@ This result can be explained with the fact that CamemBERT is better at understan
 
 <img src="https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/8234aae5-c532-411b-99ee-6d8b54949ef4" width="500">
 
-In our project, we aimed to create a user-friendly interface to make our language proficiency model accessible to everyone. Initially, we tried using Streamlit, a tool for building interactive web applications with Python. However, we encountered a challenge – our final model turned out to be quite large, making it difficult to run the website smoothly.
+In our project, we aimed to create a user-friendly interface to make our language proficiency model accessible to everyone. Initially, we tried using [Streamlit](https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/5_UI_STREAMLIT), a tool for building interactive web applications with Python. However, we encountered a challenge – our final model turned out to be quite large, making it difficult to run the website smoothly.
 
 We tried a number of different ways to overcome this challenge. After encountering difficulties loading the Streamlit tunnel, we decided to change our environment from Google Colab to Pycharm. Thanks to this change, we were able to run the user interface, but then encountered difficulties with the weight of the models too :-( 
 
 After using other methods, such as uploading the file through different tunnels - GitHub for large files, Google Drive or SwissTransfer - we managed to get the user interface working, in part. Unfortunately, it's not possible to predict the language level, but it's still possible to see how beautiful it is! 
 
+*Note : To run the project, you need to run it in a programming software. It will not work if you run it through a colab file.*
+
 
 ## 5. Improvements
 
-*--> If we had more time, what would we do?*
+**--> If we had more time, what would we do?**
 
 To make our model even better, we could have tried a few things : 
 
