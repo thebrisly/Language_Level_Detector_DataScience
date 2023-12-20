@@ -130,6 +130,9 @@ This result can be explained with the fact that CamemBERT is better at understan
 
 
 ## 4 Development of a User-Friendly Interface
+
+![image](https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/8234aae5-c532-411b-99ee-6d8b54949ef4)
+
 In our project, we aimed to create a user-friendly interface to make our language proficiency model accessible to everyone. Initially, we tried using Streamlit, a tool for building interactive web applications with Python. However, we encountered a challenge – our final model turned out to be quite large, making it difficult to run the website smoothly.
 
 Despite this setback, we didn't give up. To showcase the functionality of our interface, we decided to run the website with a simpler linear regression model. While it won't provide the same level of accuracy as our advanced model, it gives you a glimpse of how the interface works. Check out the code in the corresponding file to see our efforts in action!
