@@ -98,11 +98,8 @@ The optimized CamemBERT model demonstrated improved language proficiency classif
 
 With the camemBERT model we got this accuracy :
 
-| Models    | Kaggle |
+|  | Kaggle |
 |:---------:|:---------:|
-| Precision | - |
-| Recall    | - |
-| F1-score | - |
 | Accuracy | 0.609 |
 
 To achieve this score, here's what we did it:
@@ -135,7 +132,9 @@ This result can be explained with the fact that CamemBERT is better at understan
 
 In our project, we aimed to create a user-friendly interface to make our language proficiency model accessible to everyone. Initially, we tried using Streamlit, a tool for building interactive web applications with Python. However, we encountered a challenge – our final model turned out to be quite large, making it difficult to run the website smoothly.
 
-Despite this setback, we didn't give up. To showcase the functionality of our interface, we decided to run the website with a simpler linear regression model. While it won't provide the same level of accuracy as our advanced model, it gives you a glimpse of how the interface works. Check out the code in the corresponding file to see our efforts in action!
+We tried a number of different ways to overcome this challenge. After encountering difficulties loading the Streamlit tunnel, we decided to change our environment from Google Colab to Pycharm. Thanks to this change, we were able to run the user interface, but then encountered difficulties with the weight of the models too :-( 
+
+After using other methods, such as uploading the file through different tunnels - GitHub for large files, Google Drive or SwissTransfer - we managed to get the user interface working, in part. Unfortunately, it's not possible to predict the language level, but it's still possible to see how beautiful it is! 
 
 
 ## 5. Improvements
