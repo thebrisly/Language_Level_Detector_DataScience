@@ -131,9 +131,13 @@ In our project, we aimed to create a user-friendly interface to make our languag
 
 We tried a number of different ways to overcome this challenge. After encountering difficulties loading the Streamlit tunnel, we decided to change our environment from Google Colab to Pycharm. Thanks to this change, we were able to run the user interface, but then encountered difficulties with the weight of the models too :-( 
 
-After using other methods, such as uploading the file through different tunnels - GitHub for large files, Google Drive or SwissTransfer - we managed to get the user interface working, in part. Unfortunately, it's not possible to predict the language level, but it's still possible to see how beautiful it is! 
+HOWEVER, after **MANY** retries and relentless efforts, we successfully resolved the issues and managed to run our interface seamlessly. This was a significant achievement for our team, as it allowed us to deliver on our commitment to providing users with an accessible and user-friendly platform for assessing language proficiency.
 
-*Note : To run the project, you need to run it in a programming software. It will not work if you run it through a colab file.*
+Let me provide more details on the interface itself. Users can effortlessly insert a piece of text into the designated input area. Upon clicking the prediction button, our sophisticated language proficiency model analyzes the input and delivers a prediction regarding the text's difficulty level. This streamlined process ensures that individuals from various backgrounds and language proficiency levels can easily leverage our tool to gauge the complexity of any given text.
+
+
+* Note : To run the project, you need to run it in a programming software. It will not work if you run it through a colab file. *
+
 
 
 ## 5. Improvements
