@@ -99,7 +99,7 @@ The optimized CamemBERT model demonstrated improved language proficiency classif
 With the camemBERT model we got this accuracy :
 
 | Models    | Kaggle |
-|:---------:|:---------:|:---------:|
+|:---------:|:---------:|
 | Precision | - |
 | Recall    | - |
 | F1-score | - |
