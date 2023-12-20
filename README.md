@@ -2,19 +2,19 @@
 
 <sub><small> 0. Run this project at home
 
-You can run the different models we've created at home. To do so, run the following commands : 
+<sub>You can run the different models we've created at home. To do so, run the following commands : </sub>
 
 ```git clone git@github.com:thebrisly/UNIL_Geneva_DSML.git```
 
-Then via your terminal, go on the folder directory (hint : you can use cd to easily change the directory) and go on the model directory of your choice. For example :
+<sub>Then via your terminal, go on the folder directory (hint : you can use cd to easily change the directory) and go on the model directory of your choice. For example : </sub>
 
 ``` cd 2_MODELS/1_logistic_regression ```
 
-Then, run the python programm that you selected, like this :
+<sub>Then, run the python programm that you selected, like this : </sub>
 
-``` python3 logistic_regression1.py ``` Make sure to have all the libraries (sklearn, pandas, pytorch, streamlit...)  installed before running something :-) 
+<sub> ``` python3 logistic_regression1.py ``` Make sure to have all the libraries (sklearn, pandas, pytorch, streamlit...)  installed before running something :-)  </sub>
 
-Enjoy ! </small></sub>
+<sub> Enjoy ! </small></sub>
 
 -----------------------------------------------------
 
