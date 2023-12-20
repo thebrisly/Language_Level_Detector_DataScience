@@ -21,12 +21,12 @@ Enjoy !
 
 ![Black and White Monthly News Email Header](https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/fe6feaca-7e43-4f0d-9ffa-d2ec38c5416b)
 
-## 1. Introduction🎯
+## 1. Introduction
 Welcome to the UNIL_Geneva_DSML (Data Science and Machine Learning) project! 
 
 Our primary goal is to develop and test various machine learning models on French text data to determine the level of difficulty. For instance, given a sentence like "J'aime les pommes" (I like apples), our model aims to predict the corresponding language proficiency level, such as A1.
 
-## 2. Objective 
+## 2. Objective 🎯
 The main objective of this project is to explore and implement different machine learning algorithms to effectively categorize the difficulty levels of French texts. By leveraging a diverse range of models, we seek to enhance our understanding of how well these algorithms can perform in the context of language proficiency assessment. Once we implemented a great algorithm, we need to create a real-world application with a user-friendly interface. 
 
 ## 3. Methodology
