@@ -84,15 +84,11 @@ To prepare the data for CamemBERT, we employed tokenization and padding techniqu
 Tokenizing the training data is a really important step because it transforms the textual information into a numerical format that the machine learning model can interpret. By assigning each word a unique identifier, we create a structured representation that enables the model to efficiently process and analyze language nuances. We used the CamemBERT Tokenizer to do that.
 
 
-#### 3.3.2 Model configuration
-
-
-
-#### 3.3.3 Training and evaluation
+#### 3.3.2 Training and evaluation
 
 The training process involved multiple epochs, allowing the model to adapt and learn the intricate patterns in the language data. We utilized the AdamW optimizer with a learning rate of 2e-5 for effective training. The performance of the optimized CamemBERT model was evaluated on a separate validation set, ensuring robustness and generalization.
 
-#### 3.3.4 Results and insights
+#### 3.3.3 Results and insights
 
 The optimized CamemBERT model demonstrated improved language proficiency classification compared to the initial basic models. We couldn't print different metric on the python script so we just took the accuracy from the kaggle board. For a more complete picture, we should also check precision, recall, and F1 score. 
 
