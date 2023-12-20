@@ -1,29 +1,50 @@
 # UNIL_Geneva_DSML
 
+## 0. Run this project at home
+
+You can run the different models we've created at home. 
+To do so, run the following commands : 
+
+```git clone git@github.com:thebrisly/UNIL_Geneva_DSML.git```
+Then via your terminal, go on the folder directory (hint : you can use cd to easily change the directory) and go on the model directory of your choice. For example :
+``` cd 2_MODELS/1_logistic_regression ```
+Then, run the python programm that you selected, like this :
+``` python3 logistic_regression1.py ``` Make sure to have all the libraries (sklearn, pandas, pytorch, streamlit...)  installed before running something :-) 
+
+Enjoy !
+
+-----------------------------------------------------
+
 ![Black and White Monthly News Email Header](https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/fe6feaca-7e43-4f0d-9ffa-d2ec38c5416b)
 
-
-## 1. Introduction
+## 1. Introduction🎯
 Welcome to the UNIL_Geneva_DSML (Data Science and Machine Learning) project! 
 
 Our primary goal is to develop and test various machine learning models on French text data to determine the level of difficulty. For instance, given a sentence like "J'aime les pommes" (I like apples), our model aims to predict the corresponding language proficiency level, such as A1.
 
-## 2. Objective
+## 2. Objective 
 The main objective of this project is to explore and implement different machine learning algorithms to effectively categorize the difficulty levels of French texts. By leveraging a diverse range of models, we seek to enhance our understanding of how well these algorithms can perform in the context of language proficiency assessment. Once we implemented a great algorithm, we need to create a real-world application with a user-friendly interface. 
 
 ## 3. Methodology
-To achieve our goal, we split things up into 4 different stages :
+To achieve our goal, we split things up into 3 different stages :
 
 ### 3.1 Data Collection & Preprocessing
 Our initial step involved a comprehensive analysis of the dataset, examining variables, and gaining a global understanding of its structure. 
 
-After careful consideration, we made a strategic decision not to preprocess the data. The rationale behind this choice was to work with the dataset in its entirety, preserving its original form and ensuring that our models are exposed to the unaltered linguistic nuances present in the French texts. This approach aims to maintain the integrity of the data and assess the models on their ability to handle real-world, unprocessed language data effectively.
+After careful consideration, we made a strategic decision not to preprocess the data. The reason behind this choice was to work with the dataset in its entirety, preserving its original form and ensuring that our models are exposed to the unaltered linguistic nuances present in the French texts. 
+
+This approach aims to maintain the *integrity* of the data and assess the models on their ability to handle real-world, unprocessed language data effectively.
 
 ### 3.2 Model selection & Architecture
-Experimenting with various machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
+In this section, we explored different types of machine learning models, such as natural language processing (NLP) models, deep learning architectures, and traditional classifiers.
 
 #### 3.2.1 Initial models
-We commenced our experimentation with fundamental machine learning models commonly encountered in class, including Linear Regression, Decision Tree, KNN Neighbours, and Random Forest. The table below outlines the performance metrics achieved by each model through training and evaluation on our prepared dataset:
+We commenced our experimentation with fundamental machine learning models commonly encountered in class, including [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/1_logistic_regression](Linear Regression), [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/2_decision_tree](Decision Tree), [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/3_knn](KNN Neighbours), and [https://github.com/thebrisly/UNIL_Geneva_DSML/tree/main/2_MODELS/4_random_forest](Random Forest). 
+
+
+Each model was constructed consistently, employing a 20/80 test-train split and utilizing functions from the sklearn library for implementation. This approach ensured uniformity and comparability across our experiments.
+
+After running each model, here are the results. The table below outlines the performance metrics achieved by each model through training and evaluation on our prepared dataset:
 
 | Models    | Linear Regression | Decision Tree | KNN Neighbours | Random Forest |
 |:---------:|:---------:|:---------:|:---------:|:---------:|
@@ -48,18 +69,20 @@ After trying out basic models, we realized we needed something more advanced for
 
 This step was important for making our language proficiency assessment work even better and have a better score in the kaggle competition.
 
-### 3.3 Optimization with CamemBERT
+### 3.3 Optimization with CamemBERT 🧀
 
 CamemBERT is a smart computer program designed to understand and work with the French language. It helps computers make sense of French text by learning patterns and relationships in the language.
 
 #### 3.3.1 Tokenization and padding
 
-To prepare the data for CamemBERT, we employed tokenization and padding techniques. Using the CamemBERT tokenizer, we converted sentences into numerical tokens, ensuring consistency in the input format. Additionally, we applied padding to standardize the length of sequences, facilitating efficient model training.
+To prepare the data for CamemBERT, we employed tokenization and padding techniques. 
+
+Tokenizing the training data is a really important step because it transforms the textual information into a numerical format that the machine learning model can interpret. By assigning each word a unique identifier, we create a structured representation that enables the model to efficiently process and analyze language nuances. We used the CamemBERT Tokenizer to do that.
 
 
 #### 3.3.2 Model configuration
 
-The CamemBERT model was configured for sequence classification, aligning with the nature of our language proficiency assessment task. The number of labels was set to six, corresponding to the six language proficiency levels (A1, A2, B1, B2, C1, C2).
+
 
 #### 3.3.3 Training and evaluation
 
@@ -71,11 +94,14 @@ The optimized CamemBERT model demonstrated improved language proficiency classif
 
 With the camemBERT model we got this accuracy :
 
-| Models    | CamemBERT
-|:---------:|:---------:|
-| Accuracy | 0.609 | 
+| Models    | Kaggle |
+|:---------:|:---------:|:---------:|
+| Precision | - |
+| Recall    | - |
+| F1-score | - |
+| Accuracy | 0.609 |
 
-To achieve this, here's what we did it:
+To achieve this score, here's what we did it:
 
 ##### ---------- Best training settings ---------- 
 The final model that we used is composed of :
@@ -123,6 +149,9 @@ Also, working with a larger and more diverse set of data could have helped our m
 To conclude, we explored different machine learning models for evaluating the difficulty levels of French texts, progressing from basic models like linear regression to advanced models like CamemBERT. Despite the difficulties encountered in obtaining all measurements, the optimized CamemBERT model showed a little improvement in accuracy (going from 0.470 with linear regression to 0.609), suggesting its effectiveness in evaluating language skills. 
 
 Although our current accuracy is decent, we could still improve it by increasing the data, using advanced techniques such as text integration, and working with a larger and more diverse dataset.
+
+Anyway. We enjoyed a lot this project and we're happy with the result, because we came 3rd out of 28 in the Kaggle competition 😎
+<img width="1184" alt="image" src="https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/5051a767-e24d-4c60-910f-05966da42c2d">
 
 
 ## 7. Team
