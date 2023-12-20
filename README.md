@@ -1,6 +1,6 @@
 # UNIL_Geneva_DSML
 
-## 0. Run this project at home
+<p> ## 0. Run this project at home
 
 You can run the different models we've created at home. 
 To do so, run the following commands : 
@@ -15,11 +15,13 @@ Then, run the python programm that you selected, like this :
 
 ``` python3 logistic_regression1.py ``` Make sure to have all the libraries (sklearn, pandas, pytorch, streamlit...)  installed before running something :-) 
 
-Enjoy !
+Enjoy ! </p>
 
 -----------------------------------------------------
 
 ![Black and White Monthly News Email Header](https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/fe6feaca-7e43-4f0d-9ffa-d2ec38c5416b)
+
+[ LINK TO THE YOUTUBE VIDEO HERE ](mettre_le_lien_ici)
 
 ## 1. Introduction
 Welcome to the UNIL_Geneva_DSML (Data Science and Machine Learning) project! 
