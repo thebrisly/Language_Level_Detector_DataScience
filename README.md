@@ -1,4 +1,4 @@
-# UNIL_Geneva_DSML
+# Language Level Detector - a Data Science & Machine Learning project
 
 <sub><small> 0. Run this project at home
 
