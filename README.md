@@ -160,4 +160,4 @@ Anyway. We enjoyed a lot this project and we're happy with the result, because w
 
 
 ## 7. Team
-This project has been created by Laura Fabbiano at the University of Lausanne (Unil) during the course "Data Science & Machine Learning" for the Master in Information System.
+This project has been created by Laura Fabbiano & Lisa Hornung at the University of Lausanne (Unil) during the course "Data Science & Machine Learning" for the Master in Information System.
