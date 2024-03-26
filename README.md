@@ -18,10 +18,6 @@
 
 -----------------------------------------------------
 
-![Black and White Monthly News Email Header](https://github.com/thebrisly/UNIL_Geneva_DSML/assets/84352348/fe6feaca-7e43-4f0d-9ffa-d2ec38c5416b)
-
-[ LINK TO THE YOUTUBE VIDEO HERE ](https://www.youtube.com/watch?v=XFMq_toFuL4)
-
 ## 1. Introduction
 Welcome to the UNIL_Geneva_DSML (Data Science and Machine Learning) project! 
 
@@ -164,4 +160,4 @@ Anyway. We enjoyed a lot this project and we're happy with the result, because w
 
 
 ## 7. Team
-This project has been created by Lisa Hornung & Laura Fabbiano at the University of Lausanne (Unil) during the course "Data Science & Machine Learning" for the Master in Information System.
+This project has been created by Laura Fabbiano at the University of Lausanne (Unil) during the course "Data Science & Machine Learning" for the Master in Information System.
